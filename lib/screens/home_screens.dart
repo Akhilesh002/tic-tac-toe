@@ -74,24 +74,6 @@ class _HomeScreenState extends State<HomeScreen> {
                         Get.to(() => const GamePage(isBot: true));
                       },
                     ),
-                    ElevatedButton(
-                      style: ButtonStyle(
-                        backgroundColor:
-                            MaterialStateProperty.all<Color>(Colors.white38),
-                      ),
-                      child: SizedBox(
-                          width: 130,
-                          child: Center(
-                            child: Text(
-                              'vs Friend',
-                              style: TextStyle(
-                                  color: Colors.lightBlue[800], fontSize: 30),
-                            ),
-                          )),
-                      onPressed: () {
-                        Get.to(() => const GamePage(isBot: false));
-                      },
-                    ),
                   ],
                 ),
               ),
